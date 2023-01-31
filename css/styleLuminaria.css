@@ -1,0 +1,63 @@
+:root {
+    --fundo: #4f565b;
+    --luzLampada: #7e868f;
+    --cabo: #c7494a;
+    --luminaria: #e8a15f;
+    --lampada: #ebd37a;
+}
+
+.Luminaria{
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: var(--fundo);
+    position: relative;
+}
+
+.cabo{
+    position: absolute;
+    margin: 0 50%;
+    width: 2px;
+    height: 120px;
+    background-color: var(--cabo);
+    z-index: 0;
+}
+
+.conector{
+    width: 40px;
+    height: 20px;
+    background-color: var(--cabo);
+    margin: 120px -20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cupula{
+    width: 40px;
+    height: 1px;
+    border: solid 90px transparent;
+    border-bottom: solid 50px var(--luminaria);
+    border-top: none;
+    margin: -122px -110px;
+}
+
+.lampada{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--lampada);
+    margin: 30px -5px;
+    z-index: -1;
+}
+
+.luzLuminaria{
+    width: 350px;
+    height: 500px;
+    margin: 8px -175px;
+    transform: rotate(90deg);
+    position: absolute;
+    clip-path: polygon(25% 0%,100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    background-color: var(--luzLampada);
+    z-index: -3;
+}

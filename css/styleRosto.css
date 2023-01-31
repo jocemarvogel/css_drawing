@@ -1,0 +1,160 @@
+
+:root{
+    --corFundo: #6383ab;
+    --pele: #f4a49d;
+    --nariz: #f0858b;
+    --olhos: #000000;
+    --pelos: #390037;
+    --dente: #ffffff;
+}
+
+.Rosto{
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: var(--corFundo);
+    z-index: 0;
+
+}
+
+.cabelo{
+    position: absolute;
+    width: 410px;
+    height: 180px;
+    background-color: var(--pelos);
+    margin: 130px 45px;
+    border-radius: 15% / 30%;
+    z-index: -2;
+}
+
+.cabelo02{
+    position: absolute;
+    width: 390px;
+    height: 100px;
+    background-color: var(--pelos);
+    margin: 160px 55px;
+    border-radius: 30% ;
+    z-index: -1;
+}
+
+.orelhas{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 100px;
+    z-index: -1;
+    margin: 200px 0px;
+}
+.orelha01{
+    width: 80px;
+    height: 80px;
+    shape-outside: circle(50% at 30%);
+    clip-path: circle(50% at 0%);
+    background-color: var(--nariz);
+    transform: rotate(180deg);
+
+}
+
+.orelha02{
+    width: 80px;
+    height: 80px;
+    shape-outside: circle(50% at 30%);
+    clip-path: circle(50% at 0%);
+    background-color: var(--nariz);
+}
+
+.rosto{
+    display: flex;
+    width: 350px;
+    height: 400px;
+    background-color: var(--pele);
+    border-radius: 48%;
+    margin: 25px auto;
+    z-index: 0;
+}
+
+.sombrancelhas{
+    position: absolute;
+    width: 220px;
+    height: 40px;
+    z-index: 1;
+    margin: 130px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sombrancelha01{
+    margin-top: 15px;
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background-color: var(--pelos);
+    border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+    transform: rotate(-5deg);
+}
+
+.sombrancelha02{
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background-color: var(--pelos);
+    border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+    transform: rotate(5deg);
+}
+
+.nariz{
+    position: absolute;
+    width: 50px;
+    height: 75px;
+    background-color: var(--nariz);
+    border-radius: 0 0 50% 50%;
+    margin: 35% 30%;
+}
+
+.olhos{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: relative ;
+    margin-top: 175px;
+    margin-left: 100px;
+}
+
+.olho{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--olhos);
+}
+
+.bigode{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: var(--pelos) ;
+    border-radius: 30% 30% 43% 57% / 90% 90% 10% 10% ;
+    margin: 230px 100px;
+    z-index: -1;
+}
+
+.dente{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    shape-outside: circle(50% at 30%);
+    clip-path: circle(50% at 0%);
+    background-color: var(--dente);
+    margin: 280px 145px ;
+    transform: rotate(90deg);
+}
+
+.barba{
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    border-radius: 50% 50% 50% 50% / 20% 20% 80% 80% ;
+    background-color: var(--pelos);
+    margin: 300px 157px ;
+}
