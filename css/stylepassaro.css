@@ -1,0 +1,86 @@
+:root{
+    --fundoPassaro: #e9e9e9;
+    --olho01:#ffffff;
+    --olho02: #000000;
+    --corpo: #00bb48;
+    --bicoPassaro01: #f0dc49;
+    --bicoPassaro02: #ef9250;
+    --asa: #1d8a59;
+
+}
+
+.passaro{
+    height: 500px;
+    width: 500px;
+    background-color: var(--fundoPassaro);
+    border-radius: 5px;
+    position: relative;
+    z-index: 0;
+    margin-top: 10px;
+}
+
+.corpoPassaro{
+    width: 200px;
+    height: 250px;
+    background-color:var(--corpo);
+    border-radius: 0 75px 0 75px ;
+    margin: 20% auto;
+}
+
+.bicoPassaro01{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 75px 0 0 0;
+    background-color: var(--bicoPassaro01);
+    margin: 0% -16%;
+}
+
+.bicoPassaro02{
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    border-radius: 75px 0 0 0;
+    background-color: var(--bicoPassaro02);
+    margin: 15% -9%;
+    transform: rotate(270deg);
+}
+
+.olhosPassaro{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: var(--olho01);
+    margin: 6% 10%;
+}
+
+.olhosPassaro02{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color:  var(--olho02);
+    margin: 25%;
+}
+
+.asaPassaro{
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    shape-outside: circle(50% at 30%);
+    clip-path: circle(50% at 0%);
+    background-color: var(--asa);
+    transform: rotate(90deg);
+    margin: 33% 22%;
+}
+
+.raboPassaro{
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    border-radius: 75px 0 0 0;
+    background-color: var(--corpo);
+    margin: 50% 40%;
+    transform: rotate(180deg);
+}
