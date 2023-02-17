@@ -14,6 +14,7 @@
     height: 500px;
     background-color: var(--fundo);
     position: relative;
+    border-radius: 5px;
 }
 
 .cabo{
@@ -61,4 +62,5 @@
     clip-path: polygon(25% 0%,100% 0%, 100% 100%, 25% 100%, 0% 50%);
     background-color: var(--luzLampada);
     z-index: -3;
+    border-radius: 0 0 5px 5px;
 }
